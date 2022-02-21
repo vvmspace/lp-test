@@ -27,5 +27,6 @@ module.exports = {
   rules: {
     'quotes': ['error', 'single'],
     'import/no-unresolved': 0,
+    'new-cap': 0,
   },
 };
