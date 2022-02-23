@@ -1,8 +1,6 @@
 import * as functions from 'firebase-functions';
 import {BAD_REQUEST, NOT_FOUND} from './constants/text.constanst';
-import {firestore, initializeApp} from 'firebase-admin';
-
-initializeApp();
+import {firestore} from 'firebase-admin';
 
 export const getUser = functions.https.onRequest(async (request, response) => {
   const {id} = request.body;
